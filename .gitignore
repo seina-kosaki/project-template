@@ -1,0 +1,69 @@
+# Python bytecode and packaging
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg
+MANIFEST
+
+# Build outputs
+build/
+dist/
+site/
+node_modules/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test and analysis caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.nox/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.cache/
+
+# Python tooling
+.hypothesis/
+.pytype/
+.pyre/
+dmypy.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs (keep shared project settings such as .vscode/)
+.idea/
+*.swp
+*.swo
+*~
+
+# Local logs and temporary files
+*.log
+logs/
+tmp/
+temp/

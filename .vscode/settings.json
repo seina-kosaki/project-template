@@ -1,0 +1,60 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    "ruff.importStrategy": "fromEnvironment",
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.ignore": ["**/*_pb2.py", "**/*_pb2_grpc.py", "**/*.pyi"],
+    "python.analysis.exclude": [
+        "**/node_modules",
+        "**/__pycache__",
+        "**/.*",
+        "**/*_pb2.py",
+        "**/*_pb2_grpc.py",
+        "**/*.pyi"
+    ],
+    "mypy-type-checker.args": ["--config-file=${workspaceFolder}/pyproject.toml"],
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "mypy-type-checker.reportingScope": "workspace",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": ["tests", ".github/hooks/tests"],
+    "github.copilot.chat.localeOverride": "ja",
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "text": "コミットメッセージは .vscode/commit-template.json を参照し、dynamicTemplate の構成と tokens の定義に従って日本語で作成する。type は定義済みの feat / fix / docs / style / refactor / chore から選び、description は50文字以内にする。変更内容・理由／背景・影響範囲・備考を実際の差分に基づいて記載し、チケット番号など不明な情報は捏造しない。"
+        }
+    ],
+    "editor.suggestSelection": "first",
+    "editor.snippetSuggestions": "top",
+    "editor.tabCompletion": "on",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.mypy_cache": true,
+        "**/.ruff_cache": true,
+        "**/.pytest_cache": true
+    },
+    "files.watcherExclude": {
+        "**/.venv/**": true,
+        "data/**": true,
+        "weights/**": true,
+        "runs/**": true
+    },
+    "search.exclude": {
+        "**/.venv": true,
+        "data": true,
+        "weights": true,
+        "runs": true
+    }
+}
