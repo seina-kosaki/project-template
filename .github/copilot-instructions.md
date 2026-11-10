@@ -9,9 +9,8 @@
 
 ## プロジェクト構成
 
-- 言語: Python（`.python-version` と `pyproject.toml` の `requires-python` に従う）および React / TypeScript。
+- 言語: Python（`.python-version` と `pyproject.toml` の `requires-python` に従う）。
 - Pythonパッケージは `src/backend/app/` にあり、`api/`、`adapters/`、`domain/`、`services/` に責務を分けている。
-- フロントエンドは `frontend/src/` にある。
 - パッケージとPython環境の管理には `uv` を使用する。依存追加は適用対象のPython設定指示に従う。
 
 ## セットアップと検証
