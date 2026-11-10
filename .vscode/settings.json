@@ -23,11 +23,10 @@
     "mypy-type-checker.reportingScope": "workspace",
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestArgs": ["tests", ".github/hooks/tests"],
     "github.copilot.chat.localeOverride": "ja",
     "github.copilot.chat.commitMessageGeneration.instructions": [
         {
-            "text": "コミットメッセージは .vscode/commit-template.json を参照し、dynamicTemplate の構成と tokens の定義に従って日本語で作成する。type は定義済みの feat / fix / docs / style / refactor / chore から選び、description は50文字以内にする。変更内容・理由／背景・影響範囲・備考を実際の差分に基づいて記載し、チケット番号など不明な情報は捏造しない。"
+            "text": "コミットメッセージは .vscode/commit-template.json に従い、実際の差分に基づいて日本語で作成する。不明な情報は捏造しない。"
         }
     ],
     "editor.suggestSelection": "first",
